@@ -91,7 +91,7 @@ requires that this be added to the the panel where intermediate is added.
 - On commiting the user shall be returned to the main "Batch Upload Archival Items" window and  
  the added archive shall be available for selection
 
-NOTE: Due to the decided architecture an intermediate string can be very very long. There is at  
+**NOTE:** Due to the decided architecture an intermediate string can be very very long. There is at  
 the moment no way around this.
 
 ### **'Adding a Volume'** button and panel
