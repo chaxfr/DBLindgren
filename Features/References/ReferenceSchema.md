@@ -1,22 +1,30 @@
 # Reference Schema
-This document shall contain a definition for the schema used to export references  
-from the database. In addition to "pure" references, it shall also be able to  
-export incidents from the database into a table format.
+* This document shall contain a definition for the schema used for references.
+* It shall contain a specification of the algorithm used to export references from the database.  
+* It shall also be able to export all incidents tied to a research project into a table format.
+* This table format shall contain text snippets useable for footnotes in an APA-standard format
 
-# Reference export
+## Use Cases
+1. Export of .RIS-file on a research project level (every document source is exported **once and only once** according to a predetermined schema)
+2. Export of all incidents related to a research project and creation of foot-notes for text by outputting in a data format fitting for tabular data. 
 
-# RIS.format
+## Reference types
+References shall adhere to predetermined templates. 
 
-# Incident export
+1. Archival material
+    * This reference type **must** contain a proper archival reference created through the Archival Batch Upload feature.
+    * This is mirrored in the data-structure by the "Document" having an "Item" reference.
+2. Other documents
+    * This reference corresponds to individually added documents to the database.
+    * This reference should be considered a catch-all to allow for sources that do not fit the standard archival model  
+    (Journal articles, books, newspaper clippings etc)
+    * The desired reference for these documents can be specified by the researcher in a specific field
+    * If the researcher does not specify the output they desire a boilerplate output will be used: eg. <type>:<name>, (SourceID: XXX)
 
-Användningsområden:
-1. Export av .RIS-fil (där samtliga källor hänvisade till dyker upp en gång)
-2. Skapande av fotnoter utifrån incidenter lagrade i databasen
-3. Export i tabellform av samtliga incidenter associerade med ett större projekt
+# Reference exports
 
-2&3 kan möjligtvis kombineras till en output
+## RIS.format feature
 
-Referenstyper att stödja för de olika användningsområdena ovan:
-1. Skannat arkivmaterial med associerad arkivreferens (arkiv/intermediate/volym)
-2. Fristående dokument (pressklipp, årsredovisningar), saker som inte har en supertydlig referensram
-3. Akademiska dokument (Journalartiklar, böcker, etc) saker som har en tydlig referens men som inte passar in i ett arkivformat.  
+## Incident export feature
+
+# Examples
