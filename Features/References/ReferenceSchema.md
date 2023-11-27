@@ -1,15 +1,17 @@
 # Reference Schema
+
 * This document shall contain a definition for the schema used for references.
-* It shall contain a specification of the algorithm used to export references from the database.  
-* It shall also be able to export all incidents tied to a research project into a table format.
-* This table format shall contain text snippets useable for footnotes in an APA-standard format
+* It shall also define a schema for exporting all incidents tied to a research project into a table format.
 
 ## Use Cases
 1. Export of .RIS-file on a research project level (every document source is exported **once and only once** according to a predetermined schema)
 2. Export of all incidents related to a research project and creation of foot-notes for text by outputting in a data format fitting for tabular data. 
 
 ## Reference types
-References shall adhere to predetermined templates. 
+
+* References shall adhere to predetermined templates. 
+* The export features (.RIS & Incident) shall extract different types of values from the two different types.
+* The different reference type (Archival or Other) must be represented on the source document level
 
 1. Archival material
     * This reference type **must** contain a proper archival reference created through the Archival Batch Upload feature.
@@ -23,8 +25,18 @@ References shall adhere to predetermined templates.
 
 # Reference exports
 
-## RIS.format feature
+## .RIS-format export feature
 
 ## Incident export feature
 
+* This table format shall contain text snippets useable for footnotes in an APA-standard format
+
 # Examples
+
+## RIS - Archival material
+
+## RIS - Other Documents
+
+## Incident export - Archival material
+
+## Incident export - Other Documents
