@@ -35,3 +35,7 @@
 - For each sub-category try to commit without the correct inputs (name & ref code)
 
 
+## Test Log
+
+- 07/12/2023 - All tests completed
+
